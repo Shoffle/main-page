@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the fog is coming</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://raw.githubusercontent.com/shoffle/main-page/main/stone_block.png');
+            background-size: 128px 128px; /* Adjust to your image size */
+            background-repeat: repeat;
+            background-position: center;
+            transform: rotate(45deg) scale(1.42); /* Isometric effect */
+            overflow: hidden;
+        }
+
+        .content-wrapper {
+            transform: rotate(-45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <h1>the fog is coming</h1>
-    <p>the fog is coming</p>
-    <a><img src="https://c.tenor.com/MjWxhof4ye8AAAAC/tenor.gif"></a>
+    <div class="content-wrapper">
+        <h1>Your Content Here</h1>
+    </div>
 </body>
 </html>
